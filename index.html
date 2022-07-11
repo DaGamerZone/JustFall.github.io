@@ -88,7 +88,7 @@
 		
 		initializeFullscreenEvents();
 		
-		
+		injectAdByWindowSize();
 		
 		
 		document.addEventListener('visibilitychange',
@@ -105,7 +105,10 @@
 		
 		window.addEventListener('resize', injectAdByWindowSize);
 		
-		
+		function injectAdByWindowSize() {
+			// Inject small ad if screen is small, or large ad if screen is large
+			
+		}
 		
 		function showAds() {
 			console.log("show ads");
